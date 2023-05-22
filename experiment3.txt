@@ -11,13 +11,36 @@
   </style>
 </head>
 <body>
-  <h3> Create Pages for each section.For the lowermost section, create pages that loads the content into the middle section.The top most section should contain a page describing itself.</h3>
-  <div id="lorem">
-    <p id="top"> 
-    ----------- Lorem Text ---------
-    </p>
+  <!-- Topmost Section -->
+  <div id="top-section">
+    <h1>Top Section</h1>
+    <p>This is the topmost section. It contains information about itself.</p>
+  </div>
+
+  <!-- Middle Section -->
+  <div id="middle-section">
+    <h2>Middle Section</h2>
+    <!-- Content from lowermost section will be loaded here -->
+  </div>
+
+  <!-- Lowermost Section -->
+  <div id="lowermost-section">
+    <h3>Lowermost Section</h3>
+    <p>This is the content of the lowermost section.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+   
   </div>
   
-  <a href="#top">Go to the Middle of the page</a>
+  <!-- Script to load lowermost section into the middle section -->
+  <script>
+    window.addEventListener('load', function() {
+      var lowermostSection = document.getElementById('lowermost-section');
+      var middleSection = document.getElementById('middle-section');
+      middleSection.innerHTML = lowermostSection.innerHTML;
+    });
+  </script>
+
+  <!-- Link to scroll to the middle of the page -->
+  <a href="#middle-section">Go to the Middle of the page</a>
 </body>
 </html>
