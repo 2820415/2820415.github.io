@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Experiment 3</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <h3> Create Pages for each section.For the lowermost section, create pages that loads the content into the middle section.The top most section should contain a page describing itself.</h3>
+  <div id="lorem">
+    <p id="top"> 
+    ----------- Lorem Text ---------
+    </p>
+  </div>
+  
+  <a href="#top">Go to the Middle of the page</a>
+</body>
+</html>
