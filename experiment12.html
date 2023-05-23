@@ -10,19 +10,19 @@
   <h3>Write the Python functions for linear search, binary search, selection sort, Bubble Sort, Insertion Sort and converting Fibonacci to a linear algorithm</h3>
   
   <h2> Linear Search </h2>
-  <code> 
-    def linearsearch(arr, x):
+  <pre> 
+  def linearsearch(arr, x):
     for i in range(len(arr)):
         if arr[i] == x:
             return i
     return -1
-arr = ['t','u','t','o','r','i','a','l']
-x = 'a'
-print("element found at index "+str(linearsearch(arr,x)))
-  </code>
+  arr = ['t','u','t','o','r','i','a','l']
+  x = 'a'
+  print("element found at index "+str(linearsearch(arr,x)))
+  </pre>
   <h2> Binary Search </h2>
-  <code>
-    def binarySearch(array, x, low, high):
+  <pre>
+  def binarySearch(array, x, low, high):
     while low <= high:
         mid = low + (high - low)//2
         if array[mid] == x:
@@ -33,81 +33,81 @@ print("element found at index "+str(linearsearch(arr,x)))
             high = mid - 1
     return -1
 
-array = [3, 4, 5, 6, 7, 8, 9]
-x = 4
+  array = [3, 4, 5, 6, 7, 8, 9]
+  x = 4
 
-result = binarySearch(array, x, 0, len(array)-1)
-if result != -1:
-    print("Element is present at index " + str(result))
-else:
-    print("Not found")
-  </code>
+  result = binarySearch(array, x, 0, len(array)-1)
+  if result != -1:
+      print("Element is present at index " + str(result))
+  else:
+      print("Not found")
+  </pre>
   <h2> Selection Sort </h2>
-  <code>
-    def selectionSort( itemsList ):
+  <pre>
+  def selectionSort( itemsList ):
     n = len( itemsList )
     for i in range( n - 1 ):
-        minValueIndex = i
-        for j in range( i + 1, n ):
-            if itemsList[j] < itemsList[minValueIndex] :
-                minValueIndex = j
-        if minValueIndex != i :
-            temp = itemsList[i]
-            itemsList[i] = itemsList[minValueIndex]
-            itemsList[minValueIndex] = temp
+      minValueIndex = i
+      for j in range( i + 1, n ):
+          if itemsList[j] < itemsList[minValueIndex] :
+              minValueIndex = j
+      if minValueIndex != i :
+          temp = itemsList[i]
+          itemsList[i] = itemsList[minValueIndex]
+          itemsList[minValueIndex] = temp
     return itemsList
 
-el = [21,6,9,33,3]
-print(selectionSort(el))
-  </code>
+  el = [21,6,9,33,3]
+  print(selectionSort(el))
+  </pre>
   <h2> Bubble Sort </h2>
-    <code>
-      def bubbleSort( theSeq ):
+  <pre>
+  def bubbleSort( theSeq ):
     n = len( theSeq )
     for i in range( n - 1 ) :
-        flag = 0
-        for j in range(n - 1) :
-            if theSeq[j] > theSeq[j + 1] :
-                tmp = theSeq[j]
-                theSeq[j] = theSeq[j + 1]
-                theSeq[j + 1] = tmp
-                flag = 1
-        if flag == 0:
-            break
-    return theSeq
+      flag = 0
+      for j in range(n - 1) :
+          if theSeq[j] > theSeq[j + 1] :
+              tmp = theSeq[j]
+              theSeq[j] = theSeq[j + 1]
+              theSeq[j + 1] = tmp
+              flag = 1
+      if flag == 0:
+          break
+  return theSeq
 
-el = [21,6,9,33,3]
-result = bubbleSort(el)
-print (result)
-    </code>
+  el = [21,6,9,33,3]
+  result = bubbleSort(el)
+  print (result)
+  </pre>
   <h2> Insertion Sort </h2>
-    <code>
-      def insertionSort(arr):
+  <pre>
+  def insertionSort(arr):
     for i in range(1, len(arr)):
-        key = arr[i]
-        j = i-1
-        while j >=0 and key < arr[j] :
-            arr[j+1] = arr[j]
-            j -= 1
-        arr[j+1] = key
-arr = ['h','e','l','l','o']
-insertionSort(arr)
-print ("The sorted array is:")
-for i in range(len(arr)):
-    print (arr[i])
-    </code>
+      key = arr[i]
+      j = i-1
+      while j >=0 and key < arr[j] :
+          arr[j+1] = arr[j]
+          j -= 1
+      arr[j+1] = key
+  arr = ['h','e','l','l','o']
+  insertionSort(arr)
+  print ("The sorted array is:")
+  for i in range(len(arr)):
+      print (arr[i])
+  </pre>
   <h2> Fibonacci Algorithm </h2>
-      <code>
-        def Fibonacci(n):
+  <pre>
+  def Fibonacci(n):
     if n<= 0:
-        print("Incorrect input")
+      print("Incorrect input")
     elif n == 1:
-        return 0
+      return 0
     elif n == 2:
-        return 1
+      return 1
     else:
-        return Fibonacci(n-1)+Fibonacci(n-2)
-print(Fibonacci(10))
-      </code>
+      return Fibonacci(n-1)+Fibonacci(n-2)
+  print(Fibonacci(10))
+  </pre>
 </body>
 </html>
