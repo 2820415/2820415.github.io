@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Experiment 9</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  
+</head>
+<body>
+  <h3> Write a program in Java Script for the following: Copying, passing, and comparing by value,Copying, passing, and comparing by reference,References themselves are passed by value</h3>
+  <code> View the console for Output </code>
+  // check the console for output
+
+<script>
+    let x = 50
+    let y = x
+    x = 40
+    console.log('Copying, passing, and comparing by value Output: ' + y)
+
+    // Copying, passing, and comparing by reference
+    x = {name: "mohit"}
+    y = x
+    x.name = "yash"
+    console.log('Copying, passing, and comparing by reference Output: ' + y.name)
+
+    // References themselves are passed by value
+    let count = 0
+    const increase_count = (count) => {
+        count++
+    }
+    increase_count(count)
+    console.log('References themselves are passed by value Output: ' + count)
+</script>
+</body>
+</html>
