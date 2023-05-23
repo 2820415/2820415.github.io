@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content Loading Page</title>
+    <style>
+        .content-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+    <script>
+        function loadContent() {
+            // Simulating content loading
+            setTimeout(function() {
+                var content = "<h2>This is the dynamically loaded content</h2><p>It gets loaded into the middle section.</p>";
+                document.getElementById("content").innerHTML = content;
+            }, 2000); // Simulating a 2-second delay
+        }
+    </script>
+</head>
+<body onload="loadContent()">
+    <div class="content-container">
+        <div id="content"></div>
+    </div>
+
+    <a href="experiment3.html">Go to Main Page</a> <!-- Link to the Main Web Page (Middle Section) -->
+    <a href="web_page_description.html">Go to Web Page Description</a> <!-- Link to the Web Page Description Page (Topmost Section) -->
+</body>
+</html>
