@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Experiment 13</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <h3> Write program in Python using Lists and dictionaries, Control statements and Strings and text files </h3>
+  <h2>lists and dictionaries</h2>
+  <code>
+  list = ["hello", "there"]
+  print(list)
+
+  Dict = {1: 'hello', 2: 'there'}
+  print(Dict)
+  </code>
+
+  <h2>continue</h2>
+  <code>
+  for char in 'Python':
+      if (char == 'y'):
+          continue
+      print("Current character: ", char)
+  </code>
+  <h2>break</h2>
+  <code>
+  for char in 'Python':
+      if (char == 'h'):
+          break
+      print("Current character: ", char)
+  </code>
+  <h2>pass</h2>
+  <code>
+  for char in 'Python':
+      if (char == 'h'):
+          pass
+      print("Current character: ", char)
+  </code>
+
+  <h2>String</h2>
+  <code>
+  sentence = "i like PYTHON"
+  print(sentence.capitalize())
+  print(sentence.lower())
+  </code>
+  
+  <h2>text files</h2>
+  <code>
+  f = open("hello.txt", "a")
+  f.write("Now the file has more content!")
+  f.close()
+  f = open("hello.txt", "r")
+  print(f.read())
+  </code>
+</body>
+</html>
