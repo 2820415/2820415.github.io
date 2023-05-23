@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Experiment 8</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+ 
+</head>
+<body>
+  <h3> Write the program for using JavaScript by using for loops (through a block of code a number of times), for/in - loops (through the properties of an object), while - loops (through a block of code while a specified condition is true), do/while - loops (through a block of code while a specified condition is true).</h3>
+  
+
+<script>
+    // check the console for output
+    // for loop
+    const students = ["abc", "def", "xyz"]
+    let output = ""
+    for (let i = 0; i < students.length; i++) {
+        output += students[i] + ' '
+    }
+    console.log('For Loop Output' + '\n' + output)
+
+    // for/in loop
+    output = ""
+    for (let student in students) {
+        output += students[student] + " ";
+    }
+    console.log('for/in Loop Output' + '\n' + output)
+
+    // while loop
+    output = ""
+    let i = 0
+    while (i < students.length) {
+        output += students[i] + " ";
+        i++;
+    }
+    console.log('While Loop Output' + '\n' + output)
+
+    // do loop
+    output = ""
+    i = 0
+    do {
+        output += students[i] + " ";
+        i++;
+    }
+    while (i < students.length);
+    console.log('Do While Loop Output' + '\n' + output)
+</script>
+</body>
+</html>
