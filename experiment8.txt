@@ -12,8 +12,7 @@
 
   <code> View the Console for Output </code>
  <script>
-    // check the console for output
-    // for loop
+      // for loop
     const students = ["abc", "def", "xyz"]
     let output = ""
     for (let i = 0; i < students.length; i++) {
