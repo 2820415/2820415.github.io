@@ -5,7 +5,7 @@
 </head>
   <body>
     <h3> Create a web page, which displays the map of your country Link, each city /state on the image map, such that the respective HTML page of the city/state is displayed when the user selects an area </h3>
-    <img src="/assets/img/india-map.jpeg" alt="india_map" usemap="#india-map" width="100%" height="100%">
+    <img src="https://www.mapsofindia.com/images2/india-map.jpg" alt="india_map" usemap="#india-map" width="100%" height="100%">
 <map name="india-map">
     <area target="_blank" alt="Rajasthan" title="Rajasthan" href="https://en.wikipedia.org/wiki/Rajasthan&" coords="91,357,295,464" shape="rect">
     <area target="_blank" alt="Karnataka" title="Karnataka" href="https://en.wikipedia.org/wiki/Karnataka" coords="262,859,56" shape="circle">
