@@ -25,9 +25,9 @@
         if(user_text.value.length > 0 && search_query.value.length > 0){
             let regex_query = new RegExp(search_query.value, "ig");
             if(regex_query.test(user_text.value)){
-                output.innerHTML = "Exist"
+                output.innerHTML = "Exists"
             }else{
-                output.innerHTML = "Not Exist"
+                output.innerHTML = "Does Not Exist"
             }
         }else{
             return false
