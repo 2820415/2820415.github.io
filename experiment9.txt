@@ -9,7 +9,7 @@
 <body>
   <h3> Write a program in Java Script for the following: Copying, passing, and comparing by value,Copying, passing, and comparing by reference,References themselves are passed by value</h3>
   <code> View the console for Output </code>
-  // check the console for output
+  
 
 <script>
     let x = 50
