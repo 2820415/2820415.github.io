@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Expeiment 5!</title>
+  <title>Expeiment 5</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <style>
     * {
@@ -37,7 +37,7 @@ box-sizing: border-box;
 
 .ticker-wrap {
     position: fixed;
-    bottom: 0;
+    bottom: 50%;
     width: 100%;
     overflow: hidden;
     height: 4rem;
@@ -78,6 +78,7 @@ p {
  </style>
 </head>
 <body>
+  <h3> Add the tickertape applet to your page by customizing it </h3>
   <div class="ticker-wrap">
     <div class="ticker">
         <div class="ticker__item">Tickertape Example</div>
